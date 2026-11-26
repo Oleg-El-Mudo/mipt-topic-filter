@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "MIPT Topic Filter",
+  "version": "1.1.0",
+  "description": "Фильтр задач по теме и опция 'Все' на странице онлайн-курса МФТИ",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://edu.mipt.ru/adm/online-course/*/*/zadachi/",
+        "https://edu.mipt.ru/adm/online-course/*/*/zadachi"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+.mipt-topic-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    margin: 0 0 14px 0;
+    background: #f5f7fa;
+    border: 1px solid #e0e6ed;
+    border-radius: 6px;
+    flex-wrap: wrap;
+}
+
+.mipt-topic-filter label {
+    font-weight: 600;
+    color: #334155;
+    margin: 0;
+}
+
+.mipt-topic-filter select {
+    flex: 1;
+    min-width: 280px;
+    max-width: 720px;
+    padding: 6px 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background: #fff;
+    color: #1e293b;
+    font-size: 14px;
+    outline: none;
+}
+
+.mipt-topic-filter select:focus {
+    border-color: #1ab394;
+    box-shadow: 0 0 0 2px rgba(26, 179, 148, 0.15);
+}
+
+.mipt-topic-filter-reset {
+    padding: 6px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background: #fff;
+    color: #334155;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.mipt-topic-filter-reset:hover:not(:disabled) {
+    background: #eef2f7;
+    border-color: #94a3b8;
+}
+
+.mipt-topic-filter-reset:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
